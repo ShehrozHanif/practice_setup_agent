@@ -3,7 +3,7 @@ name = "practice-setup-agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11.4"
 dependencies = [
     "litellm>=1.67.5",
     "openai-agents>=0.0.14",

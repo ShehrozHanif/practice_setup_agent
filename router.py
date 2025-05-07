@@ -20,24 +20,24 @@ MODEL = "google/learnlm-1.5-pro-experimental:free"
 # https://openrouter.ai/google/gemini-2.5-pro-exp-03-25:free
 
 
-import requests
-import json
+# import requests
+# import json
 
-response = requests.post(
-  url=f"https://openrouter.ai/api/v1/chat/completions",
-  headers={
-    "Authorization": f"Bearer {open_router_key}",
-  },
-  data=json.dumps({
-    "model": MODEL,
-    "messages": [
-      {
-        "role": "user",
-        "content": "as a model tell me your speciality which i can use"
-      }
-    ]
-  })
-)
+# response = requests.post(
+#   url=f"https://openrouter.ai/api/v1/chat/completions",
+#   headers={
+#     "Authorization": f"Bearer {open_router_key}",
+#   },
+#   data=json.dumps({
+#     "model": MODEL,
+#     "messages": [
+#       {
+#         "role": "user",
+#         "content": "as a model tell me your speciality which i can use"
+#       }
+#     ]
+#   })
+# )
 
 # print(response.json())
 

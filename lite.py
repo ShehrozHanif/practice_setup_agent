@@ -1,3 +1,11 @@
+import sys
+import io
+
+# Configure stdin/stdout/stderr to use UTF-8
+sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
 import os 
 from dotenv import load_dotenv
 from agents import Agent, Runner, function_tool, set_tracing_disabled
@@ -26,4 +34,3 @@ agent = Agent(
 
 result = Runner.run_sync(agent, "Who is the founder of Pakistan?")
 print(result.final_output)
-
